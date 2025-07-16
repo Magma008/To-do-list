@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Website Small Icon -->
+    <link rel="icon" href="Images/list.png">
+</head>
+
+<body>
+    <div class="main">
+        <div class="todo-list">
+            <div class="create">
+                <input id="input" class="input" type="text" placeholder="To do">
+                <button id="createBtn" type="button" class="createBtn">Create</button>
+            </div>
+            <div class="works">
+                <div class="deleteAll">
+                    <button onclick="clearAll()" id="deleteAll" class="allBtn" type="button">Delete All</button>
+                </div>
+                <ul id="ul">
+                    <li class="elem">
+                        <p>Learn english</p>
+                        <div>
+                            <button id="edit" type="button" class="btns pencil"><img class="edit" src="Images/pencil.png" alt="Edit"></i> </button>
+                            <button id="del" type="button" class="btns"><img src="Images/trash.png" class="delete" alt="Delete"></button>
+                        </div>
+                    </li>
+                    <li class="elem">
+                        <p>Go to gym</p>
+                        <div>
+                            <button type="button" class="btns pencil"><img class="edit" src="Images/pencil.png" alt="Edit"></i> </button>
+                            <button type="button" class="btns"><img src="Images/trash.png" class="delete" alt="Delete"></button>
+                        </div>
+                    </li>
+                    <li class="elem">
+                        <p>Eat healthy</p>
+                        <div>
+                            <button type="button" class="btns pencil"><img class="edit" src="Images/pencil.png" alt="Edit"></i> </button>
+                            <button type="button" class="btns"><img src="Images/trash.png" class="delete" alt="Delete"></button>
+                        </div>
+                    </li>
+                    <li class="elem">
+                        <p>Read a book</p>
+                        <div>
+                            <button type="button" class="btns pencil"><img class="edit" src="Images/pencil.png" alt="Edit"></i> </button>
+                            <button type="button" class="btns"><img src="Images/trash.png" class="delete" alt="Delete"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Code -->
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
