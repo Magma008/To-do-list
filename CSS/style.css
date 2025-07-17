@@ -161,7 +161,7 @@ button {
 }
 
 @media screen and (max-width: 380px) {
-    .todo-list {
+    /* .todo-list {
         transform: scale(0.8);
-    }
+    } */
 }
